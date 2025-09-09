@@ -1,0 +1,46 @@
+// Estilos SCSS específicos para o componente de cabeçalho
+.header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .nav {
+        display: flex;
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+
+            &:hover {
+                color: #007bff;
+            }
+        }
+    }
+}
+
+// Animações para o cabeçalho
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.header {
+    animation: slideIn 0.5s ease-out;
+}

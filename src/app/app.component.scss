@@ -1,0 +1,43 @@
+// Estilos SCSS específicos para o componente raiz da aplicação
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: 'Helvetica Neue', sans-serif;
+
+body {
+    font-family: $font-stack;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: $primary-color;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    background-color: $secondary-color;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.main-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.placeholder {
+    background-color: #e0e0e0;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: #666;
+}
